@@ -139,7 +139,6 @@ void WebPageBlink::init()
     d->pageView->SetV8DateUseSystemLocaloffset(false);
     d->pageView->SetLocalStorageEnabled(true);
     d->pageView->SetShouldSuppressDialogs(true);
-    d->pageView->SetFixedPositionCreatesStackingContext(false);
     d->pageView->SetNotifyFMPDirectly(m_appDesc->usePrerendering());
     setDisallowScrolling(m_appDesc->disallowScrollingInMainFrame());
 
@@ -877,11 +876,6 @@ void WebPageBlink::setupStaticUserScripts()
 
 void WebPageBlink::closeVkb()
 {
-}
-
-bool WebPageBlink::isKeyboardVisible() const
-{
-    return d->pageView->IsKeyboardVisible();
 }
 
 bool WebPageBlink::isInputMethodActive() const
