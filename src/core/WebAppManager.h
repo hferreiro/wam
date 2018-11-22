@@ -163,7 +163,7 @@ public:
 
     void clearBrowsingData(const int removeBrowsingDataMask);
     int maskForBrowsingDataType(const char* type);
-    void setProxyRules(const std::string& proxy_rules);
+    void setProxyRules(const char* proxyRules);
 
 protected:
 private:
