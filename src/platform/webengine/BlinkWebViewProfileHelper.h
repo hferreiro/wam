@@ -45,7 +45,6 @@ public:
         webos::WebViewProfile* profile = nullptr);
     static void clearDefaultBrowsingData(const int removeBrowsingDataMask);
     static int maskForBrowsingDataType(const char* key);
-    static void setProxyRules(const char* proxyRules);
 };
 
 #endif // BLINK_WEB_VIEW_PROFILE_HELPER_H_

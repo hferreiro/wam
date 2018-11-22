@@ -64,7 +64,3 @@ int BlinkWebViewProfileHelper::maskForBrowsingDataType(const char* type) {
 
     return 0;
 }
-
-void BlinkWebViewProfileHelper::setProxyRules(const char* proxyRules) {
-    webos::WebViewProfile::GetDefaultProfile()->SetProxyRules(proxyRules);
-}
